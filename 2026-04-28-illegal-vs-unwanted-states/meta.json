@@ -1,0 +1,19 @@
+{
+  "title": "Illegal vs Unwanted States",
+  "title_zh": "非法状态 vs 不想要的状态",
+  "author": "Hillel Wayne",
+  "source": "https://buttondown.com/hillelwayne/archive/illegal-vs-unwanted-states/",
+  "published": "2026-04-28",
+  "recorded": "2026-04-30",
+  "tags": [
+    "daily-reading",
+    "software-design",
+    "formal-methods"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.en.md",
+    "notes": "notes.md"
+  }
+}
