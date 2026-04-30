@@ -20,8 +20,8 @@ tags:
 
 ## 文件
 
-- [中文翻译与整理](translation.zh.md)
-- [英文原文摘录](original.en.md)
+- [中文全文翻译](translation.zh.md)
+- [英文原文](original.en.md)
 - [元信息](meta.json)
 - [阅读笔记](notes.md)
 
