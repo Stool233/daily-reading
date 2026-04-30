@@ -79,6 +79,8 @@ That model worked when software was sold in fixed seats or tiers, products chang
 
 Figure 1.0: Traditional procurement flow.
 
+![Figure 1.0: Traditional procurement flow](assets/figures/figure-1-traditional-procurement-flow.png)
+
 The emergence of AI and usage-based products have fundamentally changed this pattern. New features launch much more frequently, each packed with different value and cost structures. Because of the potentially high operating costs of launching new features, pricing teams must evaluate monetization and value delivered feature by feature while still rolling everything into a coherent customer-facing model.
 
 One example is a universal credit framework, where users or enterprises purchase credits anchored on specific product metrics, then draw those credits down across predefined products and consumption metrics. This pricing structure can be highly beneficial because it lowers the barrier to adoption and enables either an accelerated product-led customer acquisition model or low-touch, high-velocity acquisition models where contract amendments aren't necessary, and in some cases can be prohibitive through increased friction, negotiations, and time to revenue.
@@ -88,6 +90,8 @@ To manage the shift to agile and diversified go-to-market motions and to support
 In Figure 2.0, credits are shown as a standardized billing unit used instead of direct dollars, making it easier to abstract complex metering (e.g., GPU time, API calls, tokens) into a single currency. Customers prepay a block of credits that acts like a flexible spending account for consuming services. Different activities consume credits at different rates based on resource intensity (e.g., GPU hours cost more credits than a simple inference call). As services are used, credits are drawn down from the central pool until they run out or expire at period end.
 
 Figure 2.0: Universal Credit Framework.
+
+![Figure 2.0: Universal Credit Framework](assets/figures/figure-2-universal-credit-framework.png)
 
 ## Why pricing needs its own system
 
@@ -114,6 +118,8 @@ Encoding conditional pricing logic: Modern pricing requires flexibility, and CPQ
 The operational burden for consumption and usage-based pricing models must shift to the billing system. With a flexible pricing and invoicing engine within the billing stack, monetization and billing teams unlock an elegant path to fill the gaps listed above.
 
 Figure: The Flexible Pricing & Invoicing Engine.
+
+![The Flexible Pricing & Invoicing Engine](assets/figures/figure-flexible-pricing-invoicing-engine.png)
 
 ### 2. Credit-based monetization
 
@@ -160,9 +166,13 @@ Let's say that customers buy a credit pack (for example, 1 credit = $1, 10% disc
 
 Inside the internal rate card, the pricing engine maps these dimensions.
 
+![Credit-based AI pricing dimensions](assets/figures/figure-3-credit-ai-dimensions.png)
+
 Inside the rate card, the pricing engine stores how credits map to actual usage. For example: "When a customer uses document summarization (AI action), pulling from their CRM data (data source), using GPT-4 (LLM provider), generating a complex 500-word summary (complexity level), burn 5 credits (credit rate)."
 
 Figure 3.0.
+
+![Figure 3.0: Credit-based AI pricing in practice](assets/figures/figure-3-credit-based-ai-pricing.png)
 
 When an LLM provider lowers token costs, the pricing team updates that associated node in the rate card. The pricing engine recalculates credit consumption in real time: no CPQ SKU cloning, no contract edits, no billing rework needed.
 
@@ -238,6 +248,8 @@ No manual plan updates. No credit memos. No spreadsheet tracking of who got whic
 
 Figure 4.0: The comparison.
 
+![Figure 4.0: Basic pricing table compared with pricing engine](assets/figures/figure-4-pricing-engine-comparison.png)
+
 ### 2. The invoice-compute engine
 
 Downstream ERP platforms have advanced considerably over the years. Many now claim to support real-time usage ingestion, faster invoice generation, and alerting on billing performance. These capabilities no doubt improve workflow automation, but they still fall short of runtime-level computation.
@@ -284,6 +296,8 @@ This architectural approach unifies procurement and revenue into a single operat
 The example in Figure 1.0 extends across this entire architecture. The following diagram illustrates how usage events from the product flow through the pricing engine and invoice-compute engine, updating credit ledgers, invoices, and revenue systems in real time. It shows the full path of value creation, from a customer's prepaid commitment to recognized revenue.
 
 Figure 5.0.
+
+![Figure 5.0: Modern monetization architecture](assets/figures/figure-5-modern-monetization-architecture.png)
 
 ## Modern monetization powered by a runtime system
 
