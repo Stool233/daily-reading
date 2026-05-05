@@ -17,15 +17,15 @@
 
 ## 重要公式
 
-$$T = \max(t_{\text{compute}}, t_{\text{mem}})$$
+$$T = \max(t_{\mathrm{compute}}, t_{\mathrm{mem}})$$
 
-$$t_{\text{compute}} = \frac{B \cdot N_{\text{active}}}{\text{FLOPs}}$$
+$$t_{\mathrm{compute}} = \frac{B \cdot N_{\mathrm{active}}}{\mathrm{FLOPs}}$$
 
-$$t_{\text{mem}} = \frac{N_{\text{total}} + B \cdot \text{len}_{\text{ctx}} \cdot \text{KV}_{\text{bytes/token}}}{\text{mem\_bw}}$$
+$$t_{\mathrm{mem}} = \frac{N_{\mathrm{total}} + B \cdot \mathrm{len}_{\mathrm{ctx}} \cdot \mathrm{KV}_{\mathrm{bytes/token}}}{\mathrm{mem}_{\mathrm{bw}}}$$
 
-$$B \approx \frac{\text{FLOPs}}{\text{mem\_bw}} \cdot \frac{N_{\text{total}}}{N_{\text{active}}} \approx 300 \cdot \frac{N_{\text{total}}}{N_{\text{active}}}$$
+$$B \approx \frac{\mathrm{FLOPs}}{\mathrm{mem}_{\mathrm{bw}}} \cdot \frac{N_{\mathrm{total}}}{N_{\mathrm{active}}} \approx 300 \cdot \frac{N_{\mathrm{total}}}{N_{\mathrm{active}}}$$
 
-$$C_{\text{total}} = C_{\text{pretrain}} + C_{\text{RL}} + C_{\text{inference}}$$
+$$C_{\mathrm{total}} = C_{\mathrm{pretrain}} + C_{\mathrm{RL}} + C_{\mathrm{inference}}$$
 
 ## 文章主张
 

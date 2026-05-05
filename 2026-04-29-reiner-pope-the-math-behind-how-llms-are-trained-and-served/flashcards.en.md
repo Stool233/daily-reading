@@ -14,19 +14,19 @@ Wrote some practice problems to help myself and my audience retain Reiner's blac
 
 ### Q1. Equation for time of one forward pass (hint — it's the result of two different quantities)
 
-$$T = \max(t_{\text{compute}},\ t_{\text{mem}})$$
+$$T = \max(t_{\mathrm{compute}},\ t_{\mathrm{mem}})$$
 
-### Q2. Equation for $t_{\text{compute}}$
+### Q2. Equation for $t_{\mathrm{compute}}$
 
-$$t_{\text{compute}} = \frac{B \cdot N_{\text{active}}}{\text{FLOPs}}$$
+$$t_{\mathrm{compute}} = \frac{B \cdot N_{\mathrm{active}}}{\mathrm{FLOPs}}$$
 
-where $B$ is batch size, $N_{\text{active}}$ is active parameters, and FLOPs is the compute throughput of the hardware.
+where $B$ is batch size, $N_{\mathrm{active}}$ is active parameters, and FLOPs is the compute throughput of the hardware.
 
-### Q3. Equation for $t_{\text{mem}}$ (hint — there's a contribution from the weights, and from the KV cache)
+### Q3. Equation for $t_{\mathrm{mem}}$ (hint — there's a contribution from the weights, and from the KV cache)
 
-$$t_{\text{mem}} = \frac{N_{\text{total}} + B \cdot \text{len}_{\text{ctx}} \cdot \text{KV}_{\text{bytes/token}}}{\text{mem\_bw}}$$
+$$t_{\mathrm{mem}} = \frac{N_{\mathrm{total}} + B \cdot \mathrm{len}_{\mathrm{ctx}} \cdot \mathrm{KV}_{\mathrm{bytes/token}}}{\mathrm{mem}_{\mathrm{bw}}}$$
 
-### Q4. Sketch out (in your head) what the graph with batch size on the x-axis and latency on the y-axis looks like — draw the lines for $t_{\text{compute}}$, KV fetch, and weight fetch, then bold the line that corresponds to total latency given a certain batch size.
+### Q4. Sketch out (in your head) what the graph with batch size on the x-axis and latency on the y-axis looks like — draw the lines for $t_{\mathrm{compute}}$, KV fetch, and weight fetch, then bold the line that corresponds to total latency given a certain batch size.
 
 ![Latency vs. batch size](/images/latency-vs-batch.png)
 
@@ -46,13 +46,13 @@ $\sim 300$ FLOPs / byte.
 
 Set compute time = memory time (at equality, both resources are fully saturated):
 
-$$\frac{B \cdot N_{\text{active}}}{\text{FLOPs}} = \frac{N_{\text{total}}}{\text{mem\_bw}}$$
+$$\frac{B \cdot N_{\mathrm{active}}}{\mathrm{FLOPs}} = \frac{N_{\mathrm{total}}}{\mathrm{mem}_{\mathrm{bw}}}$$
 
 Solve for $B$:
 
-$$B = \frac{\text{FLOPs}}{\text{mem\_bw}} \cdot \frac{N_{\text{total}}}{N_{\text{active}}} = 300 \cdot \frac{1}{\text{sparsity}}$$
+$$B = \frac{\mathrm{FLOPs}}{\mathrm{mem}_{\mathrm{bw}}} \cdot \frac{N_{\mathrm{total}}}{N_{\mathrm{active}}} = 300 \cdot \frac{1}{\mathrm{sparsity}}$$
 
-So $B \geq 300 / \text{sparsity}$.
+So $B \geq 300 / \mathrm{sparsity}$.
 
 **Why:** compute scales with $B$ (each token needs its own matmul), but weight fetches don't (load once, reuse across batch). Need enough tokens to amortize the fetch.
 
@@ -106,33 +106,33 @@ You're adding architecture constraints — things like Kimi's attention-to-resid
 
 ### Q2. Write the equation for total compute cost across pre-training, RL, and inference.
 
-$$C_{\text{total}} = C_{\text{pretrain}} + C_{\text{RL}} + C_{\text{inference}}$$
+$$C_{\mathrm{total}} = C_{\mathrm{pretrain}} + C_{\mathrm{RL}} + C_{\mathrm{inference}}$$
 
-$C_{\text{pretrain}} = 6 \times N_{\text{active}} \times D_{\text{pretrain}}$ (the $6ND$ formula — forward + backward)
+$C_{\mathrm{pretrain}} = 6 \times N_{\mathrm{active}} \times D_{\mathrm{pretrain}}$ (the $6ND$ formula — forward + backward)
 
-$C_{\text{RL}} = (2 \text{ to } 6) \times N_{\text{active}} \times D_{\text{RL}} \times \text{inefficiency}$ (2 if you don't train on the rollout and do forward only, up to 6 if you do; inefficiency from low MFU during decode)
+$C_{\mathrm{RL}} = (2 \,\mathrm{to}\, 6) \times N_{\mathrm{active}} \times D_{\mathrm{RL}} \times \mathrm{inefficiency}$ (2 if you don't train on the rollout and do forward only, up to 6 if you do; inefficiency from low MFU during decode)
 
-$C_{\text{inference}} = 2 \times N_{\text{active}} \times D_{\text{inference}} \times \text{inefficiency}$ (forward pass only; lower MFU during decode)
+$C_{\mathrm{inference}} = 2 \times N_{\mathrm{active}} \times D_{\mathrm{inference}} \times \mathrm{inefficiency}$ (forward pass only; lower MFU during decode)
 
-### Q3. Why might you naively expect $C_{\text{pretrain}} = C_{\text{RL}} = C_{\text{inference}}$?
+### Q3. Why might you naively expect $C_{\mathrm{pretrain}} = C_{\mathrm{RL}} = C_{\mathrm{inference}}$?
 
 If pre-training, RL, and inference costs trade off (more pre-training → less RL/inference needed for same quality, and vice versa), the optimum is approximately where all three are equal.
 
-### Q4. Solve for $D_{\text{pretrain}} = D_{\text{RL}} = D_{\text{inference}}$, with $\tfrac{1}{3}$ as much MFU from decode as prefill.
+### Q4. Solve for $D_{\mathrm{pretrain}} = D_{\mathrm{RL}} = D_{\mathrm{inference}}$, with $\tfrac{1}{3}$ as much MFU from decode as prefill.
 
-$$6 \times D_{\text{pretrain}} = 3 \times D_{\text{RL}} \times 3 \times \text{inefficiency} = 2 \times D_{\text{inference}} \times 3 \times \text{inefficiency}$$
+$$6 \times D_{\mathrm{pretrain}} = 3 \times D_{\mathrm{RL}} \times 3 \times \mathrm{inefficiency} = 2 \times D_{\mathrm{inference}} \times 3 \times \mathrm{inefficiency}$$
 
-$$D_{\text{pretrain}} = 1.5\, D_{\text{RL}} = D_{\text{inference}}$$
+$$D_{\mathrm{pretrain}} = 1.5\, D_{\mathrm{RL}} = D_{\mathrm{inference}}$$
 
 ### Q5. If a frontier model does 50M tokens/sec globally and is deployed for 2 months, using the analysis above, how many tokens should it be pretrained on?
 
-$$D_{\text{inference}} \approx 50\text{M tokens/sec} \times 60\text{ days} \times 86{,}400\text{ sec/day} \approx 200\text{T tokens}$$
+$$D_{\mathrm{inference}} \approx 50\text{M tokens/sec} \times 60\text{ days} \times 86{,}400\text{ sec/day} \approx 200\text{T tokens}$$
 
-$$D_{\text{pretrain}} \approx D_{\text{inference}} \approx 200\text{T tokens}$$
+$$D_{\mathrm{pretrain}} \approx D_{\mathrm{inference}} \approx 200\text{T tokens}$$
 
-### Q6. The Chinchilla rule is that $D_{\text{optimal}} \approx 20 \times N_{\text{active}}$. If a frontier model has 100B active parameters and is pretrained on 200T tokens, how much over Chinchilla-optimal is it?
+### Q6. The Chinchilla rule is that $D_{\mathrm{optimal}} \approx 20 \times N_{\mathrm{active}}$. If a frontier model has 100B active parameters and is pretrained on 200T tokens, how much over Chinchilla-optimal is it?
 
-$$D_{\text{chinchilla}} \approx 20 \times 100\text{B} = 2\text{T tokens}$$
+$$D_{\mathrm{chinchilla}} \approx 20 \times 100\text{B} = 2\text{T tokens}$$
 
 $$200\text{T} / 2\text{T} = 100\times$$
 
@@ -150,15 +150,15 @@ Above this point, you're memory time bound, thanks to KV cache growing, and that
 
 ### Q3. Given Gemini's 200K crossover, work out the implied bytes-per-token of KV cache. Assume 100B active parameters.
 
-At the crossover, $t_{\text{compute}} = t_{\text{KV fetch}}$:
+At the crossover, $t_{\mathrm{compute}} = t_{\text{KV fetch}}$:
 
-$$\frac{B \cdot N_{\text{active}}}{\text{FLOPs}} = \frac{B \cdot \text{len}_{\text{ctx}} \cdot \text{bytes/token}}{\text{mem\_bw}}$$
+$$\frac{B \cdot N_{\mathrm{active}}}{\mathrm{FLOPs}} = \frac{B \cdot \mathrm{len}_{\mathrm{ctx}} \cdot \mathrm{bytes/token}}{\mathrm{mem}_{\mathrm{bw}}}$$
 
 Solve for bytes/token:
 
-$$\text{bytes/token} = \frac{\text{mem\_bw}}{\text{FLOPs}} \cdot \frac{N_{\text{active}}}{\text{len}_{\text{ctx}}} = \frac{1}{300} \cdot \frac{N_{\text{active}}}{\text{len}_{\text{ctx}}}$$
+$$\mathrm{bytes/token} = \frac{\mathrm{mem}_{\mathrm{bw}}}{\mathrm{FLOPs}} \cdot \frac{N_{\mathrm{active}}}{\mathrm{len}_{\mathrm{ctx}}} = \frac{1}{300} \cdot \frac{N_{\mathrm{active}}}{\mathrm{len}_{\mathrm{ctx}}}$$
 
-Plug in: $N_{\text{active}} \approx 100\text{B}$, $\text{len}_{\text{ctx}} = 200\text{K}$ → $\text{bytes/token} \approx 1.7\text{ KB}$.
+Plug in: $N_{\mathrm{active}} \approx 100\text{B}$, $\mathrm{len}_{\mathrm{ctx}} = 200\text{K}$ → $\mathrm{bytes/token} \approx 1.7\text{ KB}$.
 
 ### Q4. Output tokens are typically 3–5× more expensive than input tokens. What does that tell us? And why is that?
 
