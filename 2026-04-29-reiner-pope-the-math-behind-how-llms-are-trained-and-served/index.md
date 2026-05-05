@@ -24,6 +24,7 @@ tags:
 - [中文结构化译文](translation.zh.md)
 - [英文文稿](original.en.md)
 - [英文练习卡片](flashcards.en.md)
+- [中文练习卡片](flashcards.zh.md)
 - [元信息](meta.json)
 - [阅读笔记](notes.md)
 
