@@ -21,7 +21,7 @@ tags:
 
 ## 文件
 
-- [中文结构化译文](translation.zh.md)
+- [中文完整译文](translation.zh.md)
 - [英文文稿](original.en.md)
 - [英文练习卡片](flashcards.en.md)
 - [中文练习卡片](flashcards.zh.md)
