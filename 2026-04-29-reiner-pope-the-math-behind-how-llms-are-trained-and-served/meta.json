@@ -1,0 +1,40 @@
+{
+  "title": "Reiner Pope - The math behind how LLMs are trained and served",
+  "title_zh": "Reiner Pope：LLM 训练与服务背后的数学",
+  "author": "Dwarkesh Patel",
+  "host": "Dwarkesh Patel",
+  "guest": "Reiner Pope",
+  "guest_affiliation": "MatX",
+  "source": "https://www.youtube.com/watch?v=xmkSf5IS-zw",
+  "official_page": "https://www.dwarkesh.com/p/reiner-pope",
+  "transcript_source": "https://gist.githubusercontent.com/dwarkeshsp/79100f0fdeed69d76241903bb0604dbe/raw/b5810c077e8ca37fe7dfd917f75a883b4c6ff688/reiner-dwarkesh-transcript.md",
+  "related_links": [
+    {
+      "title": "Reiner flashcards",
+      "url": "https://reiner-flashcards.vercel.app/"
+    }
+  ],
+  "published": "2026-04-29",
+  "recorded": "2026-05-05",
+  "language": "en",
+  "content_type": "podcast transcript",
+  "tags": [
+    "daily-reading",
+    "ai-infrastructure",
+    "llm",
+    "inference",
+    "training",
+    "gpu",
+    "moe",
+    "kv-cache",
+    "pipeline-parallelism",
+    "roofline-analysis"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.en.md",
+    "flashcards": "flashcards.en.md",
+    "notes": "notes.md"
+  }
+}
