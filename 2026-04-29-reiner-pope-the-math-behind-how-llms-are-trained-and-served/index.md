@@ -25,6 +25,7 @@ tags:
 - [英文文稿](original.en.md)
 - [英文练习卡片](flashcards.en.md)
 - [中文练习卡片](flashcards.zh.md)
+- [本地图片资源](assets/images/)
 - [元信息](meta.json)
 - [阅读笔记](notes.md)
 

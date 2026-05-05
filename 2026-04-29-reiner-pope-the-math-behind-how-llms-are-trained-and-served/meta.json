@@ -36,6 +36,7 @@
     "original": "original.en.md",
     "flashcards": "flashcards.en.md",
     "flashcards_translation": "flashcards.zh.md",
+    "images": "assets/images",
     "notes": "notes.md"
   }
 }

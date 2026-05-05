@@ -28,7 +28,7 @@ $$t_{\mathrm{mem}} = \frac{N_{\mathrm{total}} + B \cdot \mathrm{len}_{\mathrm{ct
 
 ### Q4. Sketch out (in your head) what the graph with batch size on the x-axis and latency on the y-axis looks like — draw the lines for $t_{\mathrm{compute}}$, KV fetch, and weight fetch, then bold the line that corresponds to total latency given a certain batch size.
 
-![Latency vs. batch size](/images/latency-vs-batch.png)
+![Latency vs. batch size](assets/images/latency-vs-batch.png)
 
 ### Q5. Where does the lower bound on latency come from? Why can't you just keep decreasing batch size and have infinitesimal total time to process a token?
 
@@ -80,7 +80,7 @@ Within a rack, NVLink connects every GPU to every other at full bandwidth, which
 
 At the beginning of the batch, the GPUs dedicated to the final layers are not being used, and conversely at the end of the batch, the GPUs dedicated to the first layers are not being used.
 
-![Pipeline bubbles diagram](/images/pipeline-bubbles.png)
+![Pipeline bubbles diagram](assets/images/pipeline-bubbles.png)
 
 ### Q2. Why can't you overlap batches in training to solve pipeline bubbles?
 
@@ -146,7 +146,7 @@ Above this point, you're memory time bound, thanks to KV cache growing, and that
 
 ### Q2. Sketch compute and memory time per token as context length increases. Then also sketch the pricing per token and how it changes at the crossover point.
 
-![Cost vs. context length](/images/cost-vs-context.png)
+![Cost vs. context length](assets/images/cost-vs-context.png)
 
 ### Q3. Given Gemini's 200K crossover, work out the implied bytes-per-token of KV cache. Assume 100B active parameters.
 
