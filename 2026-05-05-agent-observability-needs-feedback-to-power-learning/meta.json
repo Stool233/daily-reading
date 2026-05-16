@@ -1,0 +1,23 @@
+{
+  "title": "Agent Observability Needs Feedback to Power Learning",
+  "title_zh": "Agent 可观测性需要反馈来驱动学习",
+  "author": "Harrison Chase",
+  "source": "https://www.langchain.com/blog/agent-observability-needs-feedback-to-power-learning",
+  "published": "2026-05-05",
+  "recorded": "2026-05-17",
+  "language": "en",
+  "tags": [
+    "daily-reading",
+    "ai-agents",
+    "observability",
+    "feedback",
+    "langchain",
+    "langsmith"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.en.md",
+    "notes": "notes.md"
+  }
+}
