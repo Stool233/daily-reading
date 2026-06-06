@@ -1,0 +1,24 @@
+{
+  "title": "The 2026-07-28 MCP Specification Release Candidate",
+  "title_zh": "2026-07-28 MCP 规范发布候选版",
+  "author": "David Soria Parra, Den Delimarsky",
+  "source": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+  "published": "2026-05-21",
+  "recorded": "2026-06-06",
+  "language": "en",
+  "tags": [
+    "daily-reading",
+    "mcp",
+    "protocol",
+    "specification",
+    "release-candidate",
+    "stateless",
+    "extensions"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.en.md",
+    "notes": "notes.md"
+  }
+}
