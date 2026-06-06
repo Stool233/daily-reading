@@ -1,0 +1,26 @@
+{
+  "title": "How Anthropic enables self-service data analytics with Claude",
+  "title_zh": "Anthropic 如何用 Claude 实现自助式数据分析",
+  "author": "Chen Chang, Clement Peng, Justin Leder, Johanne Jiao, Josh Cherry",
+  "source": "https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude",
+  "published": "2026-06-03",
+  "recorded": "2026-06-06",
+  "language": "en",
+  "tags": [
+    "daily-reading",
+    "anthropic",
+    "claude",
+    "claude-code",
+    "data-analytics",
+    "self-service-analytics",
+    "data-engineering",
+    "skills",
+    "evaluations"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.en.md",
+    "notes": "notes.md"
+  }
+}

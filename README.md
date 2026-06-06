@@ -2,6 +2,7 @@
 
 每日阅读归档。每篇文章使用独立文件夹保存原文、译文、来源和笔记。
 
+- [2026-06-03｜How Anthropic enables self-service data analytics with Claude / Anthropic 如何用 Claude 实现自助式数据分析](2026-06-03-how-anthropic-enables-self-service-data-analytics-with-claude/index.md)
 - [2026-05-21｜The 2026-07-28 MCP Specification Release Candidate / 2026-07-28 MCP 规范发布候选版](2026-05-21-the-2026-07-28-mcp-specification-release-candidate/index.md)
 - [2026-05-05｜Agent Observability Needs Feedback to Power Learning / Agent 可观测性需要反馈来驱动学习](2026-05-05-agent-observability-needs-feedback-to-power-learning/index.md)
 - [2026-04-30｜Billing as the Operating System for Revenue / 作为收入操作系统的计费](2026-04-30-billing-as-the-operating-system-for-revenue/index.md)
