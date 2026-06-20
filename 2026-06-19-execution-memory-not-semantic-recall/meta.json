@@ -1,0 +1,27 @@
+{
+  "title": "Execution Memory，而不是 Semantic Recall",
+  "title_zh": "执行记忆，而不是语义召回",
+  "author": "tommy0103",
+  "source": "https://tommy0103.github.io/project_silica/",
+  "published": "2026-06",
+  "recorded": "2026-06-19",
+  "language": "zh",
+  "tags": [
+    "daily-reading",
+    "ai-agents",
+    "coding-agents",
+    "memory",
+    "retrieval",
+    "obelisk"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.zh.md",
+    "notes": "notes.md"
+  },
+  "notes": {
+    "author": "The page does not show a separate real-name author in the article body; archived under the site/GitHub handle.",
+    "copyright": "This archive keeps a non-verbatim source map and reading notes rather than reproducing the full article."
+  }
+}
