@@ -1,0 +1,25 @@
+{
+  "title": "Formal methods and the future of programming",
+  "title_zh": "形式化方法与编程的未来",
+  "author": "Yaron Minsky",
+  "source": "https://blog.janestreet.com/formal-methods-at-jane-street-index/",
+  "published": "2026-06-07",
+  "recorded": "2026-06-25",
+  "language": "en",
+  "tags": [
+    "daily-reading",
+    "jane-street",
+    "formal-methods",
+    "agentic-coding",
+    "programming-languages",
+    "oxcaml",
+    "type-systems",
+    "software-verification"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.en.md",
+    "notes": "notes.md"
+  }
+}
