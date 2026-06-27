@@ -1,0 +1,28 @@
+{
+  "title": "The software industry: annealing, but wrong",
+  "title_zh": "软件行业：退火，但方向错了",
+  "author": "apenwarr",
+  "source": "https://apenwarr.ca/log/20260531",
+  "published": "2026-05-31",
+  "recorded": "2026-06-28",
+  "language": "en",
+  "archive_mode": "summary_only",
+  "copyright_note": "Full source text and full translation are not reproduced; see the source URL.",
+  "tags": [
+    "daily-reading",
+    "apenwarr",
+    "ai-assisted-coding",
+    "software-engineering",
+    "code-review",
+    "simulated-annealing",
+    "product-development",
+    "ci-cd",
+    "software-quality"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.en.md",
+    "notes": "notes.md"
+  }
+}

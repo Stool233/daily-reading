@@ -4,6 +4,7 @@
 
 - [2026-06-07｜Formal methods and the future of programming / 形式化方法与编程的未来](2026-06-07-formal-methods-and-the-future-of-programming/index.md)
 - [2026-06-03｜How Anthropic enables self-service data analytics with Claude / Anthropic 如何用 Claude 实现自助式数据分析](2026-06-03-how-anthropic-enables-self-service-data-analytics-with-claude/index.md)
+- [2026-05-31｜The software industry: annealing, but wrong / 软件行业：退火，但方向错了](2026-05-31-the-software-industry-annealing-but-wrong/index.md)
 - [2026-05-21｜The 2026-07-28 MCP Specification Release Candidate / 2026-07-28 MCP 规范发布候选版](2026-05-21-the-2026-07-28-mcp-specification-release-candidate/index.md)
 - [2026-06-19｜Execution Memory，而不是 Semantic Recall / 执行记忆，而不是语义召回](2026-06-19-execution-memory-not-semantic-recall/index.md)
 - [2026-05-05｜Agent Observability Needs Feedback to Power Learning / Agent 可观测性需要反馈来驱动学习](2026-05-05-agent-observability-needs-feedback-to-power-learning/index.md)
