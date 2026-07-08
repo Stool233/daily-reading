@@ -1,0 +1,26 @@
+{
+  "title": "Harness Engineering for Self-Improvement",
+  "title_zh": "用于自我改进的 Harness 工程",
+  "author": "Lilian Weng",
+  "source": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+  "published": "2026-07-04",
+  "recorded": "2026-07-09",
+  "language": "en",
+  "issue": "https://github.com/Stool233/daily-reading/issues/7",
+  "tags": [
+    "daily-reading",
+    "ai-agents",
+    "harness-engineering",
+    "self-improvement",
+    "context-engineering",
+    "auto-research",
+    "evolutionary-search",
+    "agent-runtime"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.en.md",
+    "notes": "notes.md"
+  }
+}

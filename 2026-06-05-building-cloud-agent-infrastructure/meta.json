@@ -1,0 +1,27 @@
+{
+  "title": "Building cloud agent infrastructure: what's different, and what we learned",
+  "title_zh": "构建云端 agent 基础设施：差异与经验",
+  "author": "Peter Pang",
+  "source": "https://x.com/i/article/2062697992814313472",
+  "source_tweet": "https://x.com/intuitiveml/status/2062699747224568212",
+  "published": "2026-06-05",
+  "recorded": "2026-07-09",
+  "language": "en",
+  "issue": "https://github.com/Stool233/daily-reading/issues/6",
+  "tags": [
+    "daily-reading",
+    "ai-agents",
+    "cloud-infrastructure",
+    "sandbox",
+    "agent-runtime",
+    "security",
+    "credentials",
+    "creao"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.en.md",
+    "notes": "notes.md"
+  }
+}

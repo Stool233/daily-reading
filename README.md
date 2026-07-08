@@ -2,7 +2,9 @@
 
 每日阅读归档。每篇文章使用独立文件夹保存原文、译文、来源和笔记。
 
+- [2026-07-04｜Harness Engineering for Self-Improvement / 用于自我改进的 Harness 工程](2026-07-04-harness-engineering-for-self-improvement/index.md)
 - [2026-06-07｜Formal methods and the future of programming / 形式化方法与编程的未来](2026-06-07-formal-methods-and-the-future-of-programming/index.md)
+- [2026-06-05｜Building cloud agent infrastructure: what's different, and what we learned / 构建云端 agent 基础设施：差异与经验](2026-06-05-building-cloud-agent-infrastructure/index.md)
 - [2026-06-03｜How Anthropic enables self-service data analytics with Claude / Anthropic 如何用 Claude 实现自助式数据分析](2026-06-03-how-anthropic-enables-self-service-data-analytics-with-claude/index.md)
 - [2026-05-31｜The software industry: annealing, but wrong / 软件行业：退火，但方向错了](2026-05-31-the-software-industry-annealing-but-wrong/index.md)
 - [2026-05-21｜The 2026-07-28 MCP Specification Release Candidate / 2026-07-28 MCP 规范发布候选版](2026-05-21-the-2026-07-28-mcp-specification-release-candidate/index.md)
