@@ -29,6 +29,8 @@
   },
   "notes": {
     "work_type": "Critical review of the Specula paper and system.",
-    "copyright": "This archive keeps a non-verbatim source map and detailed reading notes rather than reproducing the full article."
+    "translation_basis": "Full English article text supplied directly by the user on 2026-08-16.",
+    "translation_style": "Faithful full-text Chinese translation preserving paragraph order, data, tone, and postscripts.",
+    "source_map": "The separate original.en.md remains a non-verbatim structural map of the linked source."
   }
 }

@@ -18,11 +18,11 @@ tags:
 
 # Specula: Scaling formal specifications for autonomous model checking of system code / Specula：扩展形式化规格，实现系统代码的自主模型检查
 
-这是一篇每日阅读记录。为避免重复转载，归档保存英文来源结构图、覆盖全文论证的中文详细译述、元信息和阅读笔记。
+这是一篇每日阅读记录。归档保存英文来源结构图、根据用户提供的完整正文制作的中文全文翻译、元信息和阅读笔记。
 
 ## 文件
 
-- [中文详细译述](translation.zh.md)
+- [中文全文翻译](translation.zh.md)
 - [英文来源结构图](original.en.md)
 - [元信息](meta.json)
 - [阅读笔记](notes.md)
