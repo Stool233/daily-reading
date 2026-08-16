@@ -2,6 +2,8 @@
 
 每日阅读归档。每篇文章使用独立文件夹保存原文、译文、来源和笔记。
 
+- [2026-08-12｜Specula: Scaling formal specifications for autonomous model checking of system code / Specula：扩展形式化规格，实现系统代码的自主模型检查](2026-08-12-specula-scaling-formal-specifications/index.md)
+- [2026-07-20｜Agent swarms and the new model economics / 智能体蜂群与新的模型经济学](2026-07-20-agent-swarms-and-the-new-model-economics/index.md)
 - [2026-07-04｜Harness Engineering for Self-Improvement / 用于自我改进的 Harness 工程](2026-07-04-harness-engineering-for-self-improvement/index.md)
 - [2026-06-07｜Formal methods and the future of programming / 形式化方法与编程的未来](2026-06-07-formal-methods-and-the-future-of-programming/index.md)
 - [2026-06-05｜Building cloud agent infrastructure: what's different, and what we learned / 构建云端 agent 基础设施：差异与经验](2026-06-05-building-cloud-agent-infrastructure/index.md)

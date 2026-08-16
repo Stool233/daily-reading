@@ -1,0 +1,34 @@
+{
+  "title": "Specula: Scaling formal specifications for autonomous model checking of system code",
+  "title_zh": "Specula：扩展形式化规格，实现系统代码的自主模型检查",
+  "author": "Murat Demirbas",
+  "source": "https://muratbuffalo.blogspot.com/2026/08/specula-scaling-formal-specifications.html",
+  "published": "2026-08-12",
+  "recorded": "2026-08-16",
+  "language": "en",
+  "issue": "https://github.com/Stool233/daily-reading/issues/9",
+  "related": {
+    "paper": "https://arxiv.org/abs/2607.25333",
+    "project": "https://github.com/specula-org/Specula"
+  },
+  "tags": [
+    "daily-reading",
+    "formal-methods",
+    "tla-plus",
+    "model-checking",
+    "ai-agents",
+    "specification-mining",
+    "software-verification",
+    "distributed-systems"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.en.md",
+    "notes": "notes.md"
+  },
+  "notes": {
+    "work_type": "Critical review of the Specula paper and system.",
+    "copyright": "This archive keeps a non-verbatim source map and detailed reading notes rather than reproducing the full article."
+  }
+}

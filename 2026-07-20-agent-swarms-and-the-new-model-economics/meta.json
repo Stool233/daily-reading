@@ -1,0 +1,31 @@
+{
+  "title": "Agent swarms and the new model economics",
+  "title_zh": "智能体蜂群与新的模型经济学",
+  "author": "Wilson Lin",
+  "source": "https://cursor.com/cn/blog/agent-swarm-model-economics",
+  "source_en": "https://cursor.com/blog/agent-swarm-model-economics",
+  "published": "2026-07-20",
+  "recorded": "2026-08-16",
+  "language": "en",
+  "issue": "https://github.com/Stool233/daily-reading/issues/8",
+  "tags": [
+    "daily-reading",
+    "ai-agents",
+    "agent-swarms",
+    "multi-agent-systems",
+    "harness-engineering",
+    "context-engineering",
+    "model-routing",
+    "software-engineering"
+  ],
+  "files": {
+    "index": "index.md",
+    "translation": "translation.zh.md",
+    "original": "original.en.md",
+    "notes": "notes.md"
+  },
+  "notes": {
+    "source_language": "The issue links to Cursor's Simplified Chinese localization; the English counterpart is used to preserve the original title and terminology.",
+    "copyright": "This archive keeps a non-verbatim source map and detailed reading notes rather than reproducing the full article."
+  }
+}
