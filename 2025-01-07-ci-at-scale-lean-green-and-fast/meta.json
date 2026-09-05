@@ -1,0 +1,52 @@
+{
+  "title": "CI at Scale: Lean, Green, and Fast",
+  "title_zh": "大规模 CI：精简、常绿且快速",
+  "author": "Dhruva Juloori, Zhongpeng Lin, Matthew Williams, Eddy Shin, Sonal Mahajan",
+  "affiliation": "Uber Technologies, Inc., USA",
+  "source": "https://arxiv.org/abs/2501.03440",
+  "published": "2025-01-07",
+  "updated": "2025-05-19",
+  "recorded": "2026-09-05",
+  "language": "en",
+  "version": "arXiv:2501.03440v2",
+  "venue": "ICSE 2025",
+  "issue": "https://github.com/Stool233/daily-reading/issues/10",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "related": {
+    "html": "https://arxiv.org/html/2501.03440v2",
+    "pdf": "https://arxiv.org/pdf/2501.03440v2",
+    "project": "https://github.com/uber/submitqueue",
+    "blrd_proof": "https://www.uber.com/us/en/blog/bypassing-large-diffs-in-submitqueue/"
+  },
+  "tags": [
+    "daily-reading",
+    "continuous-integration",
+    "merge-queue",
+    "monorepo",
+    "speculative-execution",
+    "probabilistic-scheduling",
+    "build-time-prediction",
+    "submitqueue"
+  ],
+  "files": {
+    "index": "index.md",
+    "original": "original.en.md",
+    "translation": "translation.zh.md",
+    "notes": "notes.md",
+    "pdf": "paper.pdf",
+    "figures": "assets/figures/"
+  },
+  "notes": {
+    "date_basis": "Directory date uses first arXiv submission; content follows v2.",
+    "translation_basis": "Full arXiv v2 article body; equations and all seven figures retained; 33 references preserved in their original language.",
+    "original_format": "arXiv HTML converted to Markdown; PDF included for authoritative layout.",
+    "figure_provenance": "Figures rendered from source PDF; Figure 3 retains attribution to prior work [9].",
+    "paper_pdf_sha256": "d84b6b286cc98f98e2c24a9ccbbb9394a61ec284456db8eba587df48c6c332c5",
+    "project_readme_blob_sha": "6c7fb86a7197699a161a3be43624ef582cc09c51",
+    "project_checked_on": "2026-09-05",
+    "project_review_scope": "README only; current open-source implementation was not audited or run."
+  }
+}
