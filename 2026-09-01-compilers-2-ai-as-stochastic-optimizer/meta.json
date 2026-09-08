@@ -1,0 +1,45 @@
+{
+  "title": "Compilers 2.0: AI as stochastic optimizer",
+  "title_zh": "编译器 2.0：AI 作为随机优化器",
+  "author": "@cdleary",
+  "source": "https://x.com/i/article/2094865284024991744",
+  "source_post": "https://x.com/cdleary/status/2094878051238887834",
+  "published": "2026-09-01",
+  "published_at": "2026-09-01T20:00:22.000Z",
+  "modified_at": "2026-09-01T20:18:26.000Z",
+  "recorded": "2026-09-08",
+  "language": "en",
+  "tags": [
+    "daily-reading",
+    "compilers",
+    "stochastic-optimization",
+    "program-synthesis",
+    "semantic-equivalence",
+    "ai-kernels"
+  ],
+  "files": {
+    "index": "index.md",
+    "original": "original.en.md",
+    "translation": "translation.zh.md",
+    "notes": "notes.md"
+  },
+  "related": {
+    "stoke": "https://theory.stanford.edu/~aiken/publications/papers/asplos13.pdf"
+  },
+  "retrieval": {
+    "method": "Public FxTwitter API; direct X pages were inaccessible.",
+    "url": "https://api.fxtwitter.com/cdleary/status/2094878051238887834",
+    "article_id": "2094865284024991744",
+    "content_blocks": 41,
+    "media_blocks": 3,
+    "media_reviewed": false,
+    "retrieved_json_sha256": "98a849b485171bcd700f6fbbd8b449e5739053128b75f874f3740dc6e25c4b8e"
+  },
+  "notes": {
+    "date_basis": "Source article publication date in UTC; Shanghai local date is 2026-09-02.",
+    "archive_type": "Chinese summary, English source navigation, and separate reader analysis; no full-text reproduction or translation.",
+    "license": "No open redistribution license established.",
+    "claims": "Article claims are attributed to its author. Checking mechanism and image performance data were not independently verified.",
+    "supplementary_reading": "STOKE abstract and introduction consulted for search/verification and completeness context."
+  }
+}

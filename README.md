@@ -2,6 +2,7 @@
 
 每日阅读归档。每篇文章使用独立文件夹保存原文、译文、来源和笔记。
 
+- [2026-09-01｜Compilers 2.0: AI as stochastic optimizer / 编译器 2.0：AI 作为随机优化器](2026-09-01-compilers-2-ai-as-stochastic-optimizer/index.md)
 - [2026-08-12｜Specula: Scaling formal specifications for autonomous model checking of system code / Specula：扩展形式化规格，实现系统代码的自主模型检查](2026-08-12-specula-scaling-formal-specifications/index.md)
 - [2026-07-20｜Agent swarms and the new model economics / 智能体蜂群与新的模型经济学](2026-07-20-agent-swarms-and-the-new-model-economics/index.md)
 - [2026-07-04｜Harness Engineering for Self-Improvement / 用于自我改进的 Harness 工程](2026-07-04-harness-engineering-for-self-improvement/index.md)
