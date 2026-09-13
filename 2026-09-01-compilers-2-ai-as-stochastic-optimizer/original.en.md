@@ -8,12 +8,14 @@ This file is a navigation aid, not a copy of the article. Read the [original X A
 
 ## Reading route
 
-Follow the discussion from compiler semantics and optimization search to expert intuition, the MLA kernel example, and the concluding argument about contracts.
+Start with the publisher's article. The [Chinese guide](translation.zh.md) adds conceptual background; the [reading notes](notes.md) examine contracts, numerical counterexamples, validation evidence, and optimization cost through original examples.
 
 ## Referenced research
 
 - [Stochastic Superoptimization — Schkufza, Sharma, Aiken, ASPLOS 2013](https://theory.stanford.edu/~aiken/publications/papers/asplos13.pdf).
+- [Alive2 — author publication page](https://web.ist.utl.pt/nuno.lopes/pubs.php?id=alive2-pldi21).
+- [Python documentation on floating-point arithmetic](https://docs.python.org/3/tutorial/floatingpoint.html).
 
 ## Retrieval note
 
-The direct X pages were unavailable to the web reader. Article text and embedded references were retrieved through the [FxTwitter endpoint](https://api.fxtwitter.com/cdleary/status/2094878051238887834). Media contents were not independently inspected. No open redistribution license was established; the archive contains a summary and separate reader commentary.
+The direct X pages were unavailable to the web reader. Article text and embedded references were retrieved through the [FxTwitter endpoint](https://api.fxtwitter.com/cdleary/status/2094878051238887834), and the text was checked again on 2026-09-13. Media contents were not independently inspected. No open redistribution license was established; the archive contains a brief synopsis, independently sourced background, and original analytical notes, rather than a full translation.

@@ -5,6 +5,7 @@ author: "@cdleary"
 source: "https://x.com/i/article/2094865284024991744"
 published: "2026-09-01"
 recorded: "2026-09-08"
+updated: "2026-09-13"
 tags:
   - daily-reading
   - compilers
@@ -16,11 +17,11 @@ tags:
 
 # Compilers 2.0: AI as stochastic optimizer / 编译器 2.0：AI 作为随机优化器
 
-本次保存中文摘要、原文导航和阅读笔记，不是全文转载或逐段翻译。阅读笔记按文章的论述顺序整理核心观点。
+本次归档包含原文导航、中文导读和阅读笔记。`translation.zh.md` 包含简要提要及有独立来源的背景讲解，不是全文译文；`notes.md` 提供契约分析、可运行反例、成本推导和讨论判断。
 
 ## 文件
 
-- [中文摘要](translation.zh.md)
+- [中文导读](translation.zh.md)
 - [原文导航](original.en.md)
 - [阅读笔记](notes.md)
 - [元信息](meta.json)
@@ -34,6 +35,8 @@ tags:
 - 本次读取：X 网页直接访问返回错误，通过 [FxTwitter 公开内容接口](https://api.fxtwitter.com/cdleary/status/2094878051238887834) 读取关联文章正文及链接。正文包含 41 个内容块，其中 3 个是媒体占位；本次未核验图片中的数据。
 - 文中引用的 [STOKE 原始论文](https://theory.stanford.edu/~aiken/publications/papers/asplos13.pdf) 已用于核对随机搜索与验证的背景。
 
-## 摘要
+## 阅读重点
 
-文章把 AI 视为提出优化实现的搜索组件，并将对输出的信任归于语义检查与明确契约。阅读时应区分候选生成能力、正确性证据和性能收益。
+先读[中文导读](translation.zh.md)，明确搜索、契约和验证的分工；再读[阅读笔记](notes.md)，检查浮点重排、验证覆盖范围、最优性表述与优化成本。
+
+2026-09-13 补充核对了 STOKE 的不完备性表述、Alive2 的验证边界，并运行了笔记中的 Python 示例。

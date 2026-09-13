@@ -24,7 +24,9 @@
   "related": {
     "oauth_token_exchange": "https://www.rfc-editor.org/rfc/rfc8693.html#section-4.1",
     "dpop_proof": "https://www.rfc-editor.org/rfc/rfc9449.html#section-4.2",
-    "dpop_request_integrity": "https://www.rfc-editor.org/rfc/rfc9449.html#section-11.7"
+    "dpop_request_integrity": "https://www.rfc-editor.org/rfc/rfc9449.html#section-11.7",
+    "oauth_security_best_practice": "https://www.rfc-editor.org/rfc/rfc9700.html#section-2.3",
+    "mcp_authorization": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization"
   },
   "retrieval": {
     "method": "Browser web reader; article body and linked RFC sections consulted.",
@@ -33,8 +35,10 @@
   },
   "notes": {
     "date_basis": "Publication date displayed on the source page.",
-    "archive_type": "Chinese summary, English source navigation, and reading notes; no full-text reproduction or translation.",
+    "archive_type": "Short article synopsis, independently sourced Chinese background guide, English source navigation, and original analytical reading notes; not a full translation or reproduction.",
     "license": "No open redistribution license established.",
-    "scope": "Article concepts are attributed to the author. RFC 8693 section 4.1 and RFC 9449 sections 4.2 and 11.7 were checked for protocol details. No implementation or current product-availability claims were verified."
-  }
+    "scope": "Article synopsis attributed to the author. Background checked against RFC 8693, RFC 9449, RFC 9700, and MCP authorization revision 2026-07-28. No AAM implementation was tested.",
+    "discussion_authorship": "Examples, hypothetical data, derivations, and discussion judgments are assistant-authored, not claims of the article authors or recorded user opinions."
+  },
+  "updated": "2026-09-13"
 }

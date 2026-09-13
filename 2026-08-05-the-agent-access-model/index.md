@@ -5,6 +5,7 @@ author: "Matt Silverlock"
 source: "https://blog.cloudflare.com/the-agent-access-model/"
 published: "2026-08-05"
 recorded: "2026-09-13"
+updated: "2026-09-13"
 tags:
   - daily-reading
   - agents
@@ -16,11 +17,11 @@ tags:
 
 # The Agent Access Model / 智能体访问模型
 
-本次归档包含中文摘要、原文导航和阅读笔记。沿用仓库的文件命名，`translation.zh.md` 保存摘要，不是全文译文。
+本次归档包含原文导航、中文导读和阅读笔记。`translation.zh.md` 包含简要提要及有独立来源的背景讲解，不是全文译文；`notes.md` 提供自编案例、并发时序推演和讨论判断。
 
 ## 文件
 
-- [中文摘要](translation.zh.md)
+- [中文导读](translation.zh.md)
 - [原文导航](original.en.md)
 - [阅读笔记](notes.md)
 - [元信息](meta.json)
@@ -35,4 +36,4 @@ tags:
 
 ## 阅读重点
 
-围绕任务权限、Trust Ratchet 的执行时序，以及身份协议能够提供的保证阅读。核心概括见[中文摘要](translation.zh.md)，协议核对与讨论问题见[阅读笔记](notes.md)。
+先读[中文导读](translation.zh.md)，分清委托身份、持钥证明、受众限制和业务授权；再读[阅读笔记](notes.md)，推演参数变更、权限传播延迟、汇总查询与共享缓存的边界。
