@@ -1,0 +1,40 @@
+{
+  "title": "The Agent Access Model",
+  "title_zh": "智能体访问模型",
+  "author": "Matt Silverlock",
+  "publisher": "Cloudflare Blog",
+  "source": "https://blog.cloudflare.com/the-agent-access-model/",
+  "published": "2026-08-05",
+  "recorded": "2026-09-13",
+  "language": "en",
+  "tags": [
+    "daily-reading",
+    "agents",
+    "access-control",
+    "least-privilege",
+    "trust-ratchet",
+    "zero-trust"
+  ],
+  "files": {
+    "index": "index.md",
+    "original": "original.en.md",
+    "translation": "translation.zh.md",
+    "notes": "notes.md"
+  },
+  "related": {
+    "oauth_token_exchange": "https://www.rfc-editor.org/rfc/rfc8693.html#section-4.1",
+    "dpop_proof": "https://www.rfc-editor.org/rfc/rfc9449.html#section-4.2",
+    "dpop_request_integrity": "https://www.rfc-editor.org/rfc/rfc9449.html#section-11.7"
+  },
+  "retrieval": {
+    "method": "Browser web reader; article body and linked RFC sections consulted.",
+    "direct_markdown_fetch": "HTTP 403; archive uses the successful web reader result.",
+    "figures_reviewed": false
+  },
+  "notes": {
+    "date_basis": "Publication date displayed on the source page.",
+    "archive_type": "Chinese summary, English source navigation, and reading notes; no full-text reproduction or translation.",
+    "license": "No open redistribution license established.",
+    "scope": "Article concepts are attributed to the author. RFC 8693 section 4.1 and RFC 9449 sections 4.2 and 11.7 were checked for protocol details. No implementation or current product-availability claims were verified."
+  }
+}
