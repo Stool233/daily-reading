@@ -1,0 +1,60 @@
+{
+  "title": "The internet discovers TLA+. Now what?",
+  "title_zh": "互联网发现了 TLA+，接下来呢？",
+  "author": "Anna Mészáros, Szilvia Ujváry, Kseniia Strelbytska, Balázs Szilágyi, Ferenc Huszár",
+  "authors": [
+    "Anna Mészáros",
+    "Szilvia Ujváry",
+    "Kseniia Strelbytska",
+    "Balázs Szilágyi",
+    "Ferenc Huszár"
+  ],
+  "publisher": "Reasonable",
+  "source": "https://reasonable.io/blog/tla-tutorial/",
+  "published": "2026-09-25",
+  "recorded": "2026-09-26",
+  "language": "en",
+  "tags": ["daily-reading", "tla-plus", "formal-methods", "model-checking", "liveness", "refinement", "verus"],
+  "files": {
+    "index": "index.md",
+    "original": "original.en.md",
+    "translation": "translation.zh.md",
+    "notes": "notes.md",
+    "experiments": "examples/README.md",
+    "model": "examples/WorkerProgress.tla",
+    "runner": "examples/run_checks.py",
+    "results": "examples/results.json",
+    "publisher_checks": "examples/publisher-checks.json"
+  },
+  "related": {
+    "playground": "https://reasonable.io/figures/tla-playground",
+    "specifying_systems": "https://lamport.azurewebsites.net/tla/book-21-07-04.pdf",
+    "verus": "https://github.com/verus-lang/verus",
+    "verus_modes": "https://verus-lang.github.io/verus/guide/modes.html",
+    "verus_assumptions": "https://verus-lang.github.io/verus/guide/requires_ensures.html",
+    "verus_llm_proofs": "https://verus-lang.github.io/verus/guide/llmforverusproof.html",
+    "anvil": "https://github.com/anvil-verifier/anvil",
+    "atl": "https://www.cis.upenn.edu/~alur/Jacm02.pdf"
+  },
+  "retrieval": {
+    "method": "Direct HTTPS article retrieval after the web reader initially failed; the publisher's text was also available in web search through its short link.",
+    "html_sha256": "28977b82da98b7f675cc36596c3dcb3edb007cfd9e019cbe65d1eed0361284a6",
+    "date_basis": "Visible publication date, time element, and citation_publication_date metadata agree.",
+    "playground_inspection": "Published inline TLA+ specification and precomputed TLC statistics inspected; the N=3 safety variants were executed unchanged from temporary files.",
+    "images_reviewed": false
+  },
+  "verification": {
+    "checked": "2026-09-26",
+    "tlc_build": "2026.03.19.000345 (rev: 30a4862)",
+    "java": "OpenJDK 26.0.1",
+    "original_model": "Seven finite WorkerProgress checks matched their expected outcomes, including three intentional counterexamples. Deadlock checking remained enabled; Wait supplies explicit self-loops.",
+    "publisher_model": "With N=3 and CHECK_DEADLOCK FALSE for invariant-only checking, the normal Election model completed with 38 distinct states; DoubleVote produced a counterexample with 6 actions and 7 states.",
+    "not_reproduced": "Publisher liveness and scaling experiments, the Verus proof pipeline, implementation-refinement proofs, and reported dataset/model-evaluation results."
+  },
+  "notes": {
+    "archive_type": "Brief article synopsis, independently sourced Chinese guide, original discussion, and reproducible local experiments; not a full-text translation or reproduction.",
+    "license": "No open redistribution license established for the article; publisher prose and model code are linked, not reproduced.",
+    "authorship": "WorkerProgress and its discussion are assistant-authored. Publisher model results are attributed and independently checked only within the recorded scope. Discussion is not presented as recorded user opinion.",
+    "claims": "The counts of specification/property pairs, proofs, and evaluation tasks are publisher-reported, not independently audited."
+  }
+}

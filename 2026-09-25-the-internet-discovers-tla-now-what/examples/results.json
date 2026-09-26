@@ -1,0 +1,132 @@
+{
+  "checked": "2026-09-26",
+  "model": "WorkerProgress.tla",
+  "input_sha256": {
+    "WorkerProgress.tla": "f7e81ea85239f5f9c166cbdd8db86282abd0e4cfa3042e0ae685a6f47182525d",
+    "SafetyOnly.cfg": "387930d69273526a8f15c735c9005cc2d5954d20ceefbd1f053fde65b54ce1ad",
+    "NoFairness.cfg": "952d848ff2797538bb2e82b48bdf29c2d81649f2ba2e4aaea8efb160632b21c6",
+    "WeakFairness.cfg": "5bc0a70bbb0caf929a20e6a5f9e46445f7ea08682259ab1de96d041b3e5ac7e9",
+    "BlockedSafety.cfg": "1af054b0be859c3e57f4c2d654ef9efebe05a9e24a7227c9427f72d986ac341d",
+    "BlockedProgress.cfg": "58d3f686b2edb6a2a4dbdb3d0752fd391d956fd61ab9a2f8abd604df307e0601",
+    "NotInductive.cfg": "ae2b234f8fb1b9810f47b4113ebd767ece602383cde1033960220fd89cc6260d",
+    "Strengthened.cfg": "c17a0dabea38d23cee05539eef6140fdc1901d30ff10222aa7425b0ab0248d47"
+  },
+  "tool_jar_sha256": "c953c663948041f6b198935952233aacc09bef81784c929acb26eae07bedc72c",
+  "tlc_build": "TLC2 Version 2026.03.19.000345 (rev: 30a4862)",
+  "java_version": "openjdk version \"26.0.1\" 2026-04-21",
+  "runs": [
+    {
+      "config": "SafetyOnly.cfg",
+      "expected": "pass",
+      "observed": "pass",
+      "exit_code": 0,
+      "generated_states": 6,
+      "distinct_states": 3,
+      "output_excerpt": [
+        "TLC2 Version 2026.03.19.000345 (rev: 30a4862)",
+        "Model checking completed. No error has been found.",
+        "6 states generated, 3 distinct states found, 0 states left on queue."
+      ]
+    },
+    {
+      "config": "NoFairness.cfg",
+      "expected": "temporal_violation",
+      "observed": "temporal_violation",
+      "exit_code": 13,
+      "generated_states": 6,
+      "distinct_states": 3,
+      "output_excerpt": [
+        "TLC2 Version 2026.03.19.000345 (rev: 30a4862)",
+        "Error: Temporal properties were violated.",
+        "Error: The following behavior constitutes a counter-example:",
+        "State 1: <Initial predicate>",
+        "/\\ started = FALSE",
+        "/\\ phase = \"ready\"",
+        "State 2: <Start line 11, col 10 to line 14, col 27 of module WorkerProgress>",
+        "/\\ started = TRUE",
+        "/\\ phase = \"running\"",
+        "State 3: Stuttering",
+        "6 states generated, 3 distinct states found, 0 states left on queue."
+      ]
+    },
+    {
+      "config": "WeakFairness.cfg",
+      "expected": "pass",
+      "observed": "pass",
+      "exit_code": 0,
+      "generated_states": 6,
+      "distinct_states": 3,
+      "output_excerpt": [
+        "TLC2 Version 2026.03.19.000345 (rev: 30a4862)",
+        "Model checking completed. No error has been found.",
+        "6 states generated, 3 distinct states found, 0 states left on queue."
+      ]
+    },
+    {
+      "config": "BlockedSafety.cfg",
+      "expected": "pass",
+      "observed": "pass",
+      "exit_code": 0,
+      "generated_states": 2,
+      "distinct_states": 1,
+      "output_excerpt": [
+        "TLC2 Version 2026.03.19.000345 (rev: 30a4862)",
+        "Model checking completed. No error has been found.",
+        "2 states generated, 1 distinct states found, 0 states left on queue."
+      ]
+    },
+    {
+      "config": "BlockedProgress.cfg",
+      "expected": "temporal_violation",
+      "observed": "temporal_violation",
+      "exit_code": 13,
+      "generated_states": 2,
+      "distinct_states": 1,
+      "output_excerpt": [
+        "TLC2 Version 2026.03.19.000345 (rev: 30a4862)",
+        "Error: Temporal properties were violated.",
+        "Error: The following behavior constitutes a counter-example:",
+        "State 1: <Initial predicate>",
+        "/\\ started = FALSE",
+        "/\\ phase = \"ready\"",
+        "State 2: Stuttering",
+        "2 states generated, 1 distinct states found, 0 states left on queue."
+      ]
+    },
+    {
+      "config": "NotInductive.cfg",
+      "expected": "invariant_violation",
+      "observed": "invariant_violation",
+      "exit_code": 12,
+      "generated_states": 10,
+      "distinct_states": 6,
+      "output_excerpt": [
+        "TLC2 Version 2026.03.19.000345 (rev: 30a4862)",
+        "Finished computing initial states: 5 distinct states generated at 2026-09-26 20:01:57.",
+        "Error: Invariant Safety is violated.",
+        "Error: The behavior up to this point is:",
+        "State 1: <Initial predicate>",
+        "/\\ started = FALSE",
+        "/\\ phase = \"running\"",
+        "State 2: <Finish line 16, col 11 to line 18, col 30 of module WorkerProgress>",
+        "/\\ started = FALSE",
+        "/\\ phase = \"done\"",
+        "10 states generated, 6 distinct states found, 2 states left on queue."
+      ]
+    },
+    {
+      "config": "Strengthened.cfg",
+      "expected": "pass",
+      "observed": "pass",
+      "exit_code": 0,
+      "generated_states": 8,
+      "distinct_states": 3,
+      "output_excerpt": [
+        "TLC2 Version 2026.03.19.000345 (rev: 30a4862)",
+        "Finished computing initial states: 3 distinct states generated at 2026-09-26 20:01:57.",
+        "Model checking completed. No error has been found.",
+        "8 states generated, 3 distinct states found, 0 states left on queue."
+      ]
+    }
+  ]
+}
