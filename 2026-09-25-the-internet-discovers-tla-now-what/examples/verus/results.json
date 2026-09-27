@@ -1,0 +1,118 @@
+{
+  "recorded_utc": "2026-09-27T01:32:45.398106+00:00",
+  "verus_version": "Verus\n  Version: 0.2026.09.20.aef82ed\n  Profile: release\n  Platform: macos_aarch64\n  Toolchain: 1.98.1-aarch64-apple-darwin (overridden by environment variable RUSTUP_TOOLCHAIN)",
+  "sources_sha256": {
+    "clamp.rs": "2b7fc154d476d3b5b5826a1c89cabeb642578d34bb5615a67cb0113644c7aa31",
+    "count_nonzero.rs": "0f0594db408b30cec6df6e73664680aa25982bc5fd733185e0403ed7a26c8cbd",
+    "quota.rs": "54889f7fee5d557d6dcc07d330c220fce7585354396a0f60ce99550cff7b9fa6"
+  },
+  "scope": "Verus checks the code inside verus!; ordinary Rust main harnesses are compiled and run, not verified. Mutants are temporary and never executed.",
+  "cases": [
+    {
+      "name": "clamp",
+      "source_sha256": "2b7fc154d476d3b5b5826a1c89cabeb642578d34bb5615a67cb0113644c7aa31",
+      "expected": "verified_and_ran",
+      "verifier_exit": 0,
+      "diagnostic_expected": null,
+      "verifier_output": "verification results:: 3 verified, 0 errors\n",
+      "verification_summary": {
+        "verified": 3,
+        "errors": 0
+      },
+      "runtime_exit": 0,
+      "runtime_output": "clamp: below / inside / above / max passed\n",
+      "matched_expectation": true
+    },
+    {
+      "name": "count_nonzero",
+      "source_sha256": "0f0594db408b30cec6df6e73664680aa25982bc5fd733185e0403ed7a26c8cbd",
+      "expected": "verified_and_ran",
+      "verifier_exit": 0,
+      "diagnostic_expected": null,
+      "verifier_output": "verification results:: 4 verified, 0 errors\n",
+      "verification_summary": {
+        "verified": 4,
+        "errors": 0
+      },
+      "runtime_exit": 0,
+      "runtime_output": "count_nonzero: empty / zero / mixed / all passed\n",
+      "matched_expectation": true
+    },
+    {
+      "name": "quota",
+      "source_sha256": "54889f7fee5d557d6dcc07d330c220fce7585354396a0f60ce99550cff7b9fa6",
+      "expected": "verified_and_ran",
+      "verifier_exit": 0,
+      "diagnostic_expected": null,
+      "verifier_output": "verification results:: 4 verified, 0 errors\n",
+      "verification_summary": {
+        "verified": 4,
+        "errors": 0
+      },
+      "runtime_exit": 0,
+      "runtime_output": "quota: accept / reject / max / zero passed\n",
+      "matched_expectation": true
+    },
+    {
+      "name": "clamp_wrong_branch",
+      "source_sha256": "13b37f70790041737a196ff11abd390885e7255765d86ca0271a489edc8fa17a",
+      "expected": "rejected",
+      "verifier_exit": 1,
+      "diagnostic_expected": "postcondition not satisfied",
+      "verifier_output": "error: postcondition not satisfied\n  --> <case-dir>/clamp_wrong_branch.rs:21:9\n   |\n21 |         r as int == clamp_spec(x as int, lo as int, hi as int),\n   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ failed this postcondition\n...\n28 |     r\n   |     - at the end of the function body\n\nverification results:: 2 verified, 1 errors\nerror: aborting due to 1 previous error\n\n",
+      "verification_summary": {
+        "verified": 2,
+        "errors": 1
+      },
+      "matched_expectation": true
+    },
+    {
+      "name": "clamp_bad_caller",
+      "source_sha256": "4e270ea67b7c5a6f70f1a43ca8881c7d322284faa0d44a8156c89b87c0f97f9a",
+      "expected": "rejected",
+      "verifier_exit": 1,
+      "diagnostic_expected": "precondition not satisfied",
+      "verifier_output": "error: precondition not satisfied\n  --> <case-dir>/clamp_bad_caller.rs:35:5\n   |\n19 |     requires lo <= hi,\n   |              -------- failed precondition\n...\n35 |     clamp_value(15, 10, 3)\n   |     ^^^^^^^^^^^^^^^^^^^^^^\n\nverification results:: 2 verified, 1 errors\nerror: aborting due to 1 previous error\n\n",
+      "verification_summary": {
+        "verified": 2,
+        "errors": 1
+      },
+      "matched_expectation": true
+    },
+    {
+      "name": "count_wrong_predicate",
+      "source_sha256": "87d6ab11eef7fbd8f010748bd31de7d9cc6ce2d67bb1a36be74cd59a73e51d0e",
+      "expected": "rejected",
+      "verifier_exit": 1,
+      "diagnostic_expected": "invariant not satisfied",
+      "verifier_output": "error: invariant not satisfied at end of loop body\n  --> <case-dir>/count_wrong_predicate.rs:39:13\n   |\n39 |             count as nat == count_prefix(values@, i as nat),\n   |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nverification results:: 3 verified, 1 errors\nerror: aborting due to 1 previous error\n\n",
+      "verification_summary": {
+        "verified": 3,
+        "errors": 1
+      },
+      "matched_expectation": true
+    },
+    {
+      "name": "quota_add_before_guard",
+      "source_sha256": "58dbfea181e617361f842cdbf8f56dda8c6844a99a8894daab6f34fa17805796",
+      "expected": "rejected",
+      "verifier_exit": 1,
+      "diagnostic_expected": "possible arithmetic underflow/overflow",
+      "verifier_output": "error: possible arithmetic underflow/overflow\n  --> <case-dir>/quota_add_before_guard.rs:50:12\n   |\n50 |         if self.used + amount <= self.limit {\n   |            ^^^^^^^^^^^^^^^^^^\n\nverification results:: 3 verified, 1 errors\nerror: aborting due to 1 previous error\n\n",
+      "verification_summary": {
+        "verified": 3,
+        "errors": 1
+      },
+      "matched_expectation": true
+    },
+    {
+      "name": "ghost_value_in_exec",
+      "source_sha256": "b6e80dba7645ca30111ee11a701abaf01d3f042601a625c293ffa9988335ff96",
+      "expected": "rejected",
+      "verifier_exit": 1,
+      "diagnostic_expected": "with mode spec",
+      "verifier_output": "error: cannot call function `ghost_value_in_exec::ghost_identity` with mode spec\n --> <case-dir>/ghost_value_in_exec.rs:4:29\n  |\n4 |     fn bad(x: u32) -> u32 { ghost_identity(x) }\n  |                             ^^^^^^^^^^^^^^^^^\n\nerror: aborting due to 1 previous error\n\n",
+      "matched_expectation": true
+    }
+  ]
+}

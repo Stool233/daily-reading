@@ -13,6 +13,7 @@
   "source": "https://reasonable.io/blog/tla-tutorial/",
   "published": "2026-09-25",
   "recorded": "2026-09-26",
+  "updated": "2026-09-27",
   "language": "en",
   "tags": ["daily-reading", "tla-plus", "formal-methods", "model-checking", "liveness", "refinement", "verus"],
   "files": {
@@ -24,7 +25,10 @@
     "model": "examples/WorkerProgress.tla",
     "runner": "examples/run_checks.py",
     "results": "examples/results.json",
-    "publisher_checks": "examples/publisher-checks.json"
+    "publisher_checks": "examples/publisher-checks.json",
+    "verus_study": "verus-study.md",
+    "verus_examples": "examples/verus/README.md",
+    "verus_results": "examples/verus/results.json"
   },
   "related": {
     "playground": "https://reasonable.io/figures/tla-playground",
@@ -51,10 +55,24 @@
     "publisher_model": "With N=3 and CHECK_DEADLOCK FALSE for invariant-only checking, the normal Election model completed with 38 distinct states; DoubleVote produced a counterexample with 6 actions and 7 states.",
     "not_reproduced": "Publisher liveness and scaling experiments, the Verus proof pipeline, implementation-refinement proofs, and reported dataset/model-evaluation results."
   },
+  "followups": [
+    {
+      "date": "2026-09-27",
+      "topic": "Verus spec, proof, and exec modes",
+      "verus": "0.2026.09.20.aef82ed",
+      "rust": "1.98.1-aarch64-apple-darwin",
+      "release": "https://github.com/verus-lang/verus/releases/tag/release/0.2026.09.20.aef82ed",
+      "release_asset_sha256": "3f89fd250d1e9792ed6d0c7c3ad72c03c02fdbca3f0638987af6e153d69377bc",
+      "verified_examples": ["clamp", "count_nonzero", "quota"],
+      "intentional_rejections": 5,
+      "scope": "Three independently written programs verified, compiled, and executed. Five temporary incorrect variants rejected with the expected diagnostics. Ordinary Rust main harnesses are outside verification. Not a reproduction of the article's Verus pipeline or a system-level liveness/refinement proof.",
+      "results": "examples/verus/results.json"
+    }
+  ],
   "notes": {
     "archive_type": "Brief article synopsis, independently sourced Chinese guide, original discussion, and reproducible local experiments; not a full-text translation or reproduction.",
     "license": "No open redistribution license established for the article; publisher prose and model code are linked, not reproduced.",
-    "authorship": "WorkerProgress and its discussion are assistant-authored. Publisher model results are attributed and independently checked only within the recorded scope. Discussion is not presented as recorded user opinion.",
+    "authorship": "WorkerProgress, the Verus examples, and their discussion are assistant-authored. Publisher model results are attributed and independently checked only within the recorded scope. Discussion is not presented as recorded user opinion.",
     "claims": "The counts of specification/property pairs, proofs, and evaluation tasks are publisher-reported, not independently audited."
   }
 }
