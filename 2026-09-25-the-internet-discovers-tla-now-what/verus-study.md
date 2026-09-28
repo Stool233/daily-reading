@@ -72,6 +72,8 @@ fn clamp_value(x: u32, lo: u32, hi: u32) -> (r: u32)
 
 完整文件还包含一个经过验证的调用者 `clamp_client`，它只凭函数契约就能证明 `clamp_value(15, 3, 10)` 返回 `10`。把这次调用改成上下界颠倒的参数，Verus 会报前置条件不满足；把实现的上界分支错写成返回 `lo`，则报后置条件不满足。两种错误发生在不同的证明责任上。[契约与模块化验证](https://verus-lang.github.io/verus/guide/requires_ensures.html)
 
+2026-09-28 补充[限幅与规格语言设计](clamp-spec-design.md)：把函数式定义改写为谓词与量词，实际证明二者等价，再用不同结构的实现满足同一规格，并对照 TLA+ 的值表达式与动作关系。
+
 ## 例二：统计非零元素，规格可以比实现更数学化
 
 需求：计算任意 `Vec<u32>` 中非零元素的数量。完整代码见 [count_nonzero.rs](examples/verus/count_nonzero.rs)。

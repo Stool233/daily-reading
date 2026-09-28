@@ -122,9 +122,16 @@ Verus 官方教程解释，`assume` 会把条件作为未经证明的事实交�
 
 三个程序均通过验证、编译和运行；五种错误变体按预期被拒绝。[实验与结果](examples/verus/README.md)记录了版本、诊断和验证范围。这是另行编写的基础实验，没有复现 Reasonable 的 TLA+ 到 Verus 流水线。
 
+## 10. 限幅规格的函数语法与逻辑语义
+
+2026-09-28 的[补充讨论](clamp-spec-design.md)区分了值定义和谓词：`clamp_spec` 定义数学结果，`r == clamp_spec(...)` 才是关于结果的命题。Verus 也可以直接使用布尔谓词、蕴含和量词；本次另写程序证明了函数式与谓词式定义在合法区间上等价。
+
+同一个规格可以由两次依次修正变量的实现满足，无需与规格采用相同的分支结构。与此同时，仅保证区间界限的弱契约，会接受始终返回下界的程序。两个实验分别说明了实现结构的自由度和需求表达的责任。[程序与结果](examples/verus/clamp-logic-results.json)
+
 ## 核对范围
 
 - 已读取文章正文和交互页公开源码，复现三节点选主的两组安全检查；未复现作者的活性、规模扩展实验与 Verus 证明流水线。
 - 本地七组 TLC 实验均得到预期结果；三组反例是教学设计，并非检查流程失败。
 - 所有具体结果、工具版本与输入哈希见 [results.json](examples/results.json)；复现方式见[实验说明](examples/README.md)。
 - Verus 延伸研究的结果单独保存在 [examples/verus/results.json](examples/verus/results.json)；不改变前述 TLC 实验的范围。
+- 9 月 28 日的限幅逻辑实验另存于 [clamp-logic-results.json](examples/verus/clamp-logic-results.json)，TLA+ 对照片段仅用于解释，未新增 TLC 检查。

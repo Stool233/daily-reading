@@ -7,6 +7,7 @@
 | [clamp.rs](clamp.rs) | 数学规格、自动证明引理、可执行限幅及调用方契约 |
 | [count_nonzero.rs](count_nonzero.rs) | `Seq` 规格、递归归纳证明、`Vec` 循环与不变量 |
 | [quota.rs](quota.rs) | 抽象状态转换、可变引用、配额不变量与防溢出 |
+| [clamp_logic.rs](clamp_logic.rs) | 9 月 28 日补充：谓词与函数等价、量词、另一种实现与弱规格 |
 | [run_checks.py](run_checks.py) | 三组正确程序和五组错误变体的验证脚本 |
 | [results.json](results.json) | 实测诊断、运行输出、工具版本与源码哈希 |
 
@@ -52,3 +53,14 @@ python3 run_checks.py --verus /absolute/path/to/verus
 只有八项实验都符合预期时，脚本才更新 `results.json`。这个文件中的失败诊断是设计好的教学结果，不是归档工作未完成；它们也不是 TLC 那样的状态轨迹反例。源码哈希包含正确程序，以及每份临时错误程序的准确内容。
 
 没有使用未经证明的假设或跳过函数体检查来使核心例子通过。验证结论仍然以规格、调用前提及工具和标准库的可信部分为基础；详细讨论见[中文讲解](../../verus-study.md)。
+
+## 限幅逻辑补充实验
+
+[clamp_logic.rs](clamp_logic.rs)是 2026-09-28 的独立补充，不包含在原八项检查脚本中。使用相同版本的工具单独执行：
+
+```sh
+/absolute/path/to/verus clamp_logic.rs --compile -o /tmp/verus-clamp-logic
+/tmp/verus-clamp-logic
+```
+
+实际输出为 `5 verified, 0 errors`，编译与运行通过。详细记录与源文件哈希见 [clamp-logic-results.json](clamp-logic-results.json)，概念讲解见[限幅与规格语言设计](../../clamp-spec-design.md)。其中 `only_bounds` 有意只承诺区间约束，验证通过并不表示它实现了完整的限幅需求。

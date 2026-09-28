@@ -13,7 +13,7 @@
   "source": "https://reasonable.io/blog/tla-tutorial/",
   "published": "2026-09-25",
   "recorded": "2026-09-26",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "language": "en",
   "tags": ["daily-reading", "tla-plus", "formal-methods", "model-checking", "liveness", "refinement", "verus"],
   "files": {
@@ -28,7 +28,10 @@
     "publisher_checks": "examples/publisher-checks.json",
     "verus_study": "verus-study.md",
     "verus_examples": "examples/verus/README.md",
-    "verus_results": "examples/verus/results.json"
+    "verus_results": "examples/verus/results.json",
+    "clamp_spec_design": "clamp-spec-design.md",
+    "clamp_logic_example": "examples/verus/clamp_logic.rs",
+    "clamp_logic_results": "examples/verus/clamp-logic-results.json"
   },
   "related": {
     "playground": "https://reasonable.io/figures/tla-playground",
@@ -67,6 +70,15 @@
       "intentional_rejections": 5,
       "scope": "Three independently written programs verified, compiled, and executed. Five temporary incorrect variants rejected with the expected diagnostics. Ordinary Rust main harnesses are outside verification. Not a reproduction of the article's Verus pipeline or a system-level liveness/refinement proof.",
       "results": "examples/verus/results.json"
+    },
+    {
+      "date": "2026-09-28",
+      "topic": "Clamp function versus predicate specifications and comparison with TLA+",
+      "verus": "0.2026.09.20.aef82ed",
+      "verified_example": "examples/verus/clamp_logic.rs",
+      "verification_count": 5,
+      "scope": "Function/predicate equivalence on valid intervals, existence and uniqueness, universal bounds, an alternative executable implementation, and a deliberately weak contract were checked. The TLA+ snippets are explanatory and were not model-checked.",
+      "results": "examples/verus/clamp-logic-results.json"
     }
   ],
   "notes": {

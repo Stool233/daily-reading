@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-09-28T03:16:11.947110+00:00",
+  "source": "clamp_logic.rs",
+  "source_sha256": "fadc79a07635208d45b3327b9531c5d4a6f73f60e310be8e48807cd9704d52cb",
+  "verus_version": "Verus\n  Version: 0.2026.09.20.aef82ed\n  Profile: release\n  Platform: macos_aarch64\n  Toolchain: 1.98.1-aarch64-apple-darwin (overridden by environment variable RUSTUP_TOOLCHAIN)",
+  "command": [
+    "verus",
+    "clamp_logic.rs",
+    "--compile",
+    "-o",
+    "<temp-dir>/clamp_logic"
+  ],
+  "verified": 5,
+  "errors": 0,
+  "verifier_exit": 0,
+  "verifier_output": "verification results:: 5 verified, 0 errors\n",
+  "runtime_exit": 0,
+  "runtime_output": "clamp_logic: alternate implementation passed; weak contract accepts a non-clamp result\n",
+  "scope": "Equivalence of a function and a predicate on valid intervals; existence and uniqueness; universally quantified bounds; alternate implementation; weak contract accepting a non-clamp implementation. Main is an unverified runtime harness. No TLA+ specification or Verus-to-SMT translation correctness is proved here."
+}
