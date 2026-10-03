@@ -1,0 +1,51 @@
+{
+  "title": "What TLA+ can and can't check",
+  "title_zh": "TLA+ 能检查什么，不能检查什么",
+  "author": "Hillel Wayne",
+  "publisher": "Computer Things / Buttondown",
+  "source": "https://buttondown.com/hillelwayne/archive/what-tla-can-and-cant-check/",
+  "published": "2026-09-30",
+  "recorded": "2026-10-03",
+  "language": "en",
+  "tags": ["daily-reading", "tla-plus", "formal-methods", "temporal-logic", "model-checking", "reachability", "hyperproperties"],
+  "files": {
+    "index": "index.md",
+    "original": "original.en.md",
+    "translation": "translation.zh.md",
+    "notes": "notes.md"
+  },
+  "related": {
+    "temporal_properties": "https://learntla.com/core/temporal-logic.html",
+    "action_properties": "https://learntla.com/core/action-properties.html",
+    "auxiliary_variables_tutorial": "https://learntla.com/topics/aux-vars.html",
+    "auxiliary_variables_lamport_merz": "https://lamport.azurewebsites.net/tla/auxiliary/auxiliary.html",
+    "specifying_systems": "https://lamport.azurewebsites.net/tla/book-21-07-04.pdf",
+    "reachability_proposal": "https://github.com/tlaplus/tlaplus/issues/860",
+    "possible_documentation_pr": "https://github.com/tlaplus/tlaplus/pull/1400",
+    "possible_documentation": "https://github.com/tlaplus/tlaplus/blob/0894c3407f4717fec7cc18bde3bf3c857fa47333/docs/possible-conditions.md",
+    "hyperproperties": "https://www.hillelwayne.com/post/hyperproperties/",
+    "prism_probability_operator": "https://www.prismmodelchecker.org/manual/PropertySpecification/ThePOperator"
+  },
+  "retrieval": {
+    "method": "Web reader and direct HTTPS retrieval; canonical URL and visible publication date inspected.",
+    "html_sha256": "5546e4e07bfff5c6605890d23dd906f3f04ac944b5cffb03e36a0bfbb531d9c2",
+    "date_basis": "Publication date displayed on the article page.",
+    "full_article_archived": false
+  },
+  "verification": {
+    "checked": "2026-10-03",
+    "method": "Primary-source documentation checks and read-only local TLC source inspection.",
+    "possible_keyword": "_POSSIBLE",
+    "possible_documentation_commit": "0894c3407f4717fec7cc18bde3bf3c857fa47333",
+    "possible_documentation_merged": "2026-08-11",
+    "possible_feature_status": "Provisional in the pinned documentation; availability was not tested against a released binary.",
+    "not_executed": ["TLC model checking", "PRISM probability checking", "implementation verification"],
+    "examples": "Independently authored conceptual examples and an illustrative configuration fragment; not executable experiment results."
+  },
+  "notes": {
+    "archive_type": "Brief article synopsis, independently sourced Chinese guide, and reading discussion; not a full-text translation or reproduction.",
+    "license": "No open redistribution license established for the article; full publisher prose is linked, not reproduced.",
+    "scope": "Focuses on this article without comparing it to earlier reading archives.",
+    "authorship": "Additional explanations and analysis are assistant-authored, separately attributed, and not presented as the author's or user's recorded opinions."
+  }
+}
