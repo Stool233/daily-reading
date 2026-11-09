@@ -1,0 +1,45 @@
+{
+  "checked": "2026-11-09",
+  "source_sha256": "7cbad1b6a26da2d716d3d1c52efedf194f4e7fa813f157eeec41e2db52898f64",
+  "source_attachment_preserved_byte_for_byte": true,
+  "original_blocks": 72,
+  "translated_blocks": 72,
+  "section_headings": 8,
+  "body_paragraphs": 64,
+  "markdown_original_and_translation_aligned": true,
+  "pdf": {
+    "file": "output/pdf/critical-thinking-when-agents-do-the-work.zh.pdf",
+    "sha256": "7317b279ae24ee5a752431c0d0e0b9d27b60be31c92168f676a51e433d244f65",
+    "bytes": 309068,
+    "pages": 8,
+    "bookmarks": 8,
+    "body_text_matches_all_translation_blocks_after_whitespace_normalization": true,
+    "matched_nonwhitespace_characters": 6438,
+    "embedded_font_subsets": {
+      "/AAAAAA+STHeitiSC-Medium-1": true,
+      "/AAAAAA+STSongti-SC-Regular-6": true,
+      "/AAAAAB+STSongti-SC-Regular-6": true,
+      "/AAAAAC+STSongti-SC-Regular-6": true,
+      "/AAAAAD+STSongti-SC-Regular-6": true,
+      "/AAAAAA+STSongti-SC-Bold-1": true
+    },
+    "visible_glyphs_within_page_margins": true,
+    "invalid_chinese_punctuation_line_edges": 0,
+    "visual_review": {
+      "renderer": "pdftoppm",
+      "resolution_dpi": 100,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "result": "Final page renders inspected: no clipping, overlap, missing glyphs, or invalid punctuation line starts observed."
+    }
+  },
+  "scope": "Layout and text completeness checks do not independently verify claims made by the original author. Translation was reviewed against the user-provided text; source web metadata remains separately qualified."
+}

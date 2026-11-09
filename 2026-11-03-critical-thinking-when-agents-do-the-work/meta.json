@@ -1,0 +1,49 @@
+{
+  "title": "Critical thinking when agents do the work",
+  "title_zh": "当智能体替你工作时，如何保持批判性思考",
+  "author": "Addy Osmani",
+  "publisher": "X",
+  "source": "https://x.com/addyosmani/status/2117512471930167377",
+  "published": "2026-11-03",
+  "recorded": "2026-11-09",
+  "language": "en",
+  "tags": [
+    "daily-reading",
+    "ai-agents",
+    "critical-thinking",
+    "verification",
+    "cognitive-offloading",
+    "engineering-practice"
+  ],
+  "files": {
+    "index": "index.md",
+    "original": "original.en.md",
+    "source": "source.txt",
+    "translation": "translation.zh.md",
+    "notes": "notes.md",
+    "translation_segments": "translation.segments.json",
+    "pdf": "output/pdf/critical-thinking-when-agents-do-the-work.zh.pdf",
+    "pdf_builder": "build_pdf.py",
+    "verification": "verification.json"
+  },
+  "retrieval": {
+    "translation_source": "Complete user-provided text attachment; not a reconstruction from web summaries.",
+    "source_sha256": "7cbad1b6a26da2d716d3d1c52efedf194f4e7fa813f157eeec41e2db52898f64",
+    "source_bytes": 18067,
+    "source_characters": 18067,
+    "source_blocks": 72,
+    "section_headings": 8,
+    "body_paragraphs": 64,
+    "x_fetch": "HTTP 403; original X page not directly inspected.",
+    "metadata_basis": "Title and November 3 post date cross-checked against indexed secondary pages for the exact post URL, not directly confirmed from X.",
+    "metadata_reference": "https://joaozinho.news/en/editions/november-3-2026-morning/addy-osmani-warns-of-cognitive-surrender-when-the-agent-s/"
+  },
+  "notes": {
+    "archive_type": "Complete Chinese translation of user-provided text, full supplied English text, a Chinese PDF, and separate reading notes.",
+    "translation": "All 72 supplied blocks are translated in order; 8 headings and 64 body paragraphs.",
+    "source_limitations": "The pasted text contains no embedded hyperlinks or images. Those missing source elements are not reconstructed.",
+    "claims": "Attributions, product descriptions, and research claims inside the translation are the author’s statements; they have not all been independently verified.",
+    "pdf_scope": "Complete Chinese translation plus cover and navigation; independent reading discussion is stored separately.",
+    "authorship": "Reading notes and terminology explanations are assistant-authored and not represented as the original author’s prose."
+  }
+}

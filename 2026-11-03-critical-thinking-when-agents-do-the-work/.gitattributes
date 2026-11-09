@@ -1,0 +1,2 @@
+# Preserve the exact user-supplied text, including original trailing spaces.
+source.txt -whitespace

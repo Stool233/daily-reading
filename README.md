@@ -2,6 +2,7 @@
 
 每日阅读归档。每篇文章使用独立文件夹保存原文、译文、来源和笔记。
 
+- [2026-11-03｜Critical thinking when agents do the work / 当智能体替你工作时，如何保持批判性思考](2026-11-03-critical-thinking-when-agents-do-the-work/index.md)
 - [2026-09-30｜What TLA+ can and can't check / TLA+ 能检查什么，不能检查什么](2026-09-30-what-tla-can-and-cant-check/index.md)
 - [2026-09-25｜The internet discovers TLA+. Now what? / 互联网发现了 TLA+，接下来呢？](2026-09-25-the-internet-discovers-tla-now-what/index.md)
 - [2026-09-01｜Compilers 2.0: AI as stochastic optimizer / 编译器 2.0：AI 作为随机优化器](2026-09-01-compilers-2-ai-as-stochastic-optimizer/index.md)
